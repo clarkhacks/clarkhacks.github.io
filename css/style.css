@@ -1,0 +1,101 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Share Tech Mono", Monospace, Courier;
+  font-weight: 400;
+  font-size: 17px;
+  color: #c8c8c8;
+  height: 100%;
+  background: #222;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  margin: 15px 0;
+  padding: 0;
+  list-style: none;
+}
+
+main {
+  max-width: 100%;
+  min-height: 100%;
+  margin: auto;
+  padding: 2rem 3rem;
+}
+main .content {
+  width: 100%;
+}
+main .content .title {
+  color: #b5e853;
+}
+main .content .title::before {
+  content: "> ";
+}
+main .content span {
+  padding: 0;
+  margin: 0 10px 0 0;
+}
+main .content p {
+  padding: 0;
+  margin: 10px 0 30px 0;
+}
+main .content img {
+  width: 100%;
+  max-width: 20rem;
+  margin-bottom: 1rem;
+}
+main .content a {
+  text-decoration: none;
+  color: #fff;
+}
+main .content a:hover {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.header, .footer {
+  width: 100%;
+  overflow: hidden;
+  letter-spacing: 0px;
+}
+.header a, .footer a {
+  margin: 0 1rem;
+}
+
+article {
+  max-width: 730px;
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+  line-height: 28px;
+}
+article h3 {
+  display: inline-block;
+  margin: 20px 0;
+}
+article .code {
+  max-width: 730px;
+  background: #1f1f1f;
+  padding: 1rem;
+  margin: 10px 0 30px 0;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    padding: 1rem;
+  }
+}
