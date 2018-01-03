@@ -23,6 +23,7 @@ pre {
 ul {
   padding: 0;
 }
+
 ul li {
   margin: 15px 0;
   padding: 0;
@@ -35,44 +36,59 @@ main {
   margin: auto;
   padding: 2rem 3rem;
 }
+
 main .content {
   width: 100%;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
 }
+
 main .content .title {
   color: #b5e853;
 }
+
 main .content .title::before {
   content: "> ";
 }
+
 main .content span {
   padding: 0;
   margin: 0 10px 0 0;
 }
+
 main .content p {
   padding: 0;
   margin: 10px 0 30px 0;
 }
+
 main .content img {
   width: 100%;
   max-width: 20rem;
   margin-bottom: 1rem;
 }
+
 main .content a {
   text-decoration: none;
   color: #fff;
 }
+
 main .content a:hover {
   color: #fff;
   font-weight: 500;
   text-decoration: underline;
 }
 
-.header, .footer {
+.header,
+.footer {
   width: 100%;
   overflow: hidden;
   letter-spacing: 0px;
 }
-.header a, .footer a {
+
+.header a,
+.footer a {
   margin: 0 1rem;
 }
 
@@ -82,10 +98,12 @@ article {
   margin-top: -1rem;
   line-height: 28px;
 }
+
 article h3 {
   display: inline-block;
   margin: 20px 0;
 }
+
 article .code {
   max-width: 730px;
   background: #1f1f1f;
@@ -94,6 +112,15 @@ article .code {
   display: inline-block;
 }
 
+.credit-wrapper {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+.credit-wrapper a {
+  color: rgb(158, 158, 158);
+  text-decoration: none;
+}
 @media only screen and (max-width: 500px) {
   main {
     padding: 1rem;
